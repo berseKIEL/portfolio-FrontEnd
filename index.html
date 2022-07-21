@@ -30,7 +30,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#acerca" class="nav__link">
+              <a href="#about" class="nav__link">
                 <img
                   src="/app/static/images/about.svg"
                   width="50"
@@ -49,16 +49,7 @@
                 Habilidades
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#experiencia" class="nav__link">
-                <img
-                  src="/app/static/images/experience.svg"
-                  width="50"
-                  height="50"
-                />
-                Experiencias
-              </a>
-            </li>
+
             <li class="nav__item">
               <a href="#educacion" class="nav__link">
                 <img
@@ -69,16 +60,18 @@
                 Educacion
               </a>
             </li>
+
             <li class="nav__item">
-              <a href="#proyectos" class="nav__link">
+              <a href="#experiencias" class="nav__link">
                 <img
-                  src="/app/static/images/projectos.svg"
+                  src="/app/static/images/experience.svg"
                   width="50"
                   height="50"
                 />
-                Proyectos
+                Experiencias
               </a>
             </li>
+
           </ul>
           <img
             class="nav__close"
@@ -520,7 +513,7 @@
       <hr class="seccion__hr" />
 
       <!-- Cuarta sección, Educación -->
-      <section class="educacion seccion" id="seccion">
+      <section class="educacion seccion" id="educacion">
         <h2 class="seccion__titulo educacion__titulo">Educacion</h2>
         <span class="seccion__subtitulo container educacion__subtitulo">Estudios Alcanzados relacionados a Programación</span>
 
@@ -557,7 +550,7 @@
       <hr class="seccion__hr" />
 
       <!-- Quinta sección, Proyectos -->
-      <section class="experiencias seccion">
+      <section class="experiencias seccion" id = "experiencias">
         <h2 class="seccion__titulo experiencias__titulo">Proyectos/Portfolio</h2>
         <span class="seccion__subtitulo container experiencias__subtitulo">Mis proyectos</span>
         <div class="experiencias__contenedor container">
@@ -589,22 +582,23 @@
         </div>
       </section>
 
+      <hr class="seccion__hr" />
+
       <section class="contacto seccion" id="contacto">
         <h2 class="seccion__titulo contacto__titulo">¡Contactame!</h2>
-        <span class="seccion__subtitulo contacto__subtitulo">Ponme a contacto via Gmail</span>
+        <span class="seccion__subtitulo contacto__subtitulo">¡Ponme en contacto!</span>
 
         <div class="contacto__container container grid">
-          <div>
-            <div class="contacto__informacion">
-                <img src="/app/static/images/discord.svg" alt="discord" width="30" />
-                <h3 class="contacto__titulo">Discord</h3>
-                <span class="contacto__subtitulo__dos">
-                  BerseKIEL#3956
-                </span>
-            </div>
+            <div class="contacto__informacion" id="discord">
+              <img src="/app/static/images/discord.svg" alt="discord" width="30" class="contacto__icon"/>
+              <h3 class="contacto__titulo">Discord</h3>
+              <span class="contacto__subtitulo__dos">
+                BerseKIEL#3956
+              </span>
+          </div>
 
-            <div class="contacto__informacion">
-              <img src="/app/static/images/telegram.svg" alt="telegram" width="30"/>
+            <div class="contacto__informacion" id="telegram">
+              <img src="/app/static/images/telegram.svg" alt="telegram" width="30" class="contacto__icon"/>
               <h3 class="contacto__titulo">Telegram</h3>
               <span class="contacto__subtitulo__dos">
                 @kielito
@@ -612,18 +606,30 @@
             </div>
 
             <div class="contacto__informacion">
-              <img src="/app/static/images/mail.svg" alt="mail" width="30"/>
+              <img src="/app/static/images/mail.svg" alt="mail" width="30" class="contacto__icon"/>
               <h3 class="contacto__titulo">Gmail</h3>
               <span class="contacto__subtitulo__dos">
                 exebarco2803020@gmail.com
               </span>
-            </div>
 
           </div>
         </div>
       </section>
-
     </main>
+
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__contenedor container">
+            <h1 class="footer__titulo">Barco Exequiel</h1>
+            <h2 class="footer__subtitulo">Desarrollador Full-Stack</h2>
+            <img src="app/static/images/exequielbarco.jpg" alt="" class="footer__image">
+            <span class="footer__subtitulo">
+              Todos los derechos reservados - @BerseKIEL
+            </span>
+        </div>
+      </div>
+    </footer>
+
     <script src="/app/static/js/main.js" type="text/javascript"></script>
   </body>
 </html>
