@@ -116,6 +116,7 @@ img {
   height: auto;
 }
 
+
 /* Clases Reutilizables  */
 .seccion {
   padding: 2rem 0 4rem;
@@ -817,4 +818,156 @@ filter: invert(78%) sepia(21%) saturate(4554%) hue-rotate(341deg) brightness(100
 
 .change-theme:hover {
   filter: invert(78%) sepia(21%) saturate(4554%) hue-rotate(341deg) brightness(100%) contrast(102%);
+}
+
+/* Media queries */
+@media screen and (max-width: 350px){
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .nav__menu {
+    padding: 2rem .25rem 4rem
+  }
+
+  .nav__list {
+    column-gap : 0;
+  }
+  
+  .home__video .video {
+    width: 280px;
+    height: 200px;
+  }
+  
+  .habilidades__data__uno .habilidades__icon {
+    width: 20px;
+  }
+  .habilidades__contenido__uno {
+    grid-template-columns: repeat(3,minmax(4rem, 1fr));
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .contacto__container {
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+
+  }
+
+  body {
+    margin: 0
+  }
+
+  .seccion {
+    padding: 6rem 0 2rem;
+  }
+
+  .seccion__subtitle {
+    margin-bottom: 4rem;
+  }
+
+  .seccion {
+    padding-top: 4rem;
+  }
+
+  .home__content {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+  
+  .habilidades__contenido {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .habilidades__contenedor {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .footer__subtitulo:last-child {
+    padding-bottom: 4rem
+  }
+  
+  .header {
+    top:0;
+    bottom: initial;
+  }
+
+  .header,
+  .main,
+  .footer__contenedor {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    height:calc(var(--header-altura) + 1.5rem);
+    column-gap: 1rem;
+  }
+
+  .nav__link .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display:none;
+  }
+
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .nav__menu {
+    margin-left:auto
+  }
+
+  .change-theme {
+    margin:0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header,
+  .main,
+  .footer__contenedor {
+    padding:0;
+  }
+
+  .seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__bg {
+    width:100%;
+  }
+
+  .footer__contenedor {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    margin: 0;
+  }
+
+  .footer__subtitulo:last-child {
+    padding-bottom:1rem;
+  }
+
+
+
+
+
 }
