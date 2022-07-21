@@ -11,11 +11,11 @@
   /*  Colores de la fuente */
   --color-primario: hsl(var(--hue-color), 100%, 50%);
   --color-primario-secundario: hsl(var(--hue-color), 70%, 50%);
-  --color-primario-alternativo: hsl(var(--hue-color), 100%, 50%);
+  --color-primario-alternativo: hsl(var(--hue-color), 92%, 44%);
   --color-primario-claro: hsl(var(--hue-color), 100%, 90%);
   --color-titulo: hsl(var(--hue-color), 8%, 15%);
-  --color-texto: hsl(var(--hue-color), 8%, 45%);
-  --color-texto-claro: hsl(var(--hue-color), 5%, 45%);
+  --color-texto: hsl(var(--hue-color), 5%, 45%);
+  --color-texto-claro: hsl(var(--hue-color), 82%, 79%);
   --color-input: hsl(var(--hue-color), 70%, 96%);
   --color-cuerpo: hsl(var(--hue-color), 60%, 99%);
   --color-container: #fff;
@@ -51,6 +51,20 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
+
+/* Color Oscuro Variables */
+body.dark-theme {
+  --color-primario: hsl(var(--hue-color), 100%, 50%);
+  --color-titulo: hsl(var(--hue-color), 8%, 95%);
+  --color-texto: hsl(var(--hue-color), 5%, 75%);
+  --color-input: hsl(var(--hue-color), 29%, 16%);
+  --color-cuerpo: hsl(var(--hue-color), 5%, 16%);
+  --color-container: hsl(var(--hue-color), 10%, 16%);
+
+  
+
+}
+
 
 /* Font para computadoras con mayor resolucion */
 @media screen and (min-width: 968px) {
@@ -170,7 +184,6 @@ img {
 }
 
 .nav__toggle {
-  font-size: 1.1rem;
   cursor: pointer;
 }
 
@@ -772,6 +785,36 @@ filter: invert(78%) sepia(21%) saturate(4554%) hue-rotate(341deg) brightness(100
   margin-bottom: var(--mb-1-5);
   width: 250px;
   border-radius: var(--mb-2);
+}
 
-  
+/*links activos */
+.active-link {
+  filter: invert(78%) sepia(21%) saturate(4554%) hue-rotate(341deg) brightness(100%) contrast(102%);
+}
+
+/* color header */
+.scroll_header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+}
+
+
+/*  dark/light */
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.nav__toggle {
+  display:flex;
+  padding:0;
+  margin:0;
+}
+
+.change-theme {
+  margin-right:20px;
+  cursor:pointer;
+}
+
+.change-theme:hover {
+  filter: invert(78%) sepia(21%) saturate(4554%) hue-rotate(341deg) brightness(100%) contrast(102%);
 }
