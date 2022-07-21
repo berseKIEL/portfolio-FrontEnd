@@ -448,13 +448,12 @@ img {
 }
 
 .habilidades__contenido__uno {
-  border-radius: 52px;
   border-width: 2px;
   border-style: solid;
   border-color: var(--color-primario);
 
   grid-auto-rows: 5rem;
-  grid-template-columns: repeat(auto-fill,minmax(7rem, 1fr));
+  grid-template-columns: repeat(3,minmax(7rem, 1fr));
   gap:0;
   align-items: center;
   justify-items: center;
@@ -655,6 +654,82 @@ filter: invert(78%) sepia(21%) saturate(4554%) hue-rotate(341deg) brightness(100
 
 /* Experiencias */
 
-/* Proyectos */
+.experiencias__titulo {
+  font-size: var(--fuente-tamanio-grande);
+}
+
+.experiencias__subtitulo {
+  font-size: var(--fuente-tamanio-h1);
+}
+
+.experiencias__titulo,
+.experiencias__subtitulo {
+  margin-bottom: 2px;
+} 
+
+.experiencias__contenedor {
+  overflow: initial;
+  margin-top: var(--mb-2);
+}
+
+.experiencias__contenido {
+  padding: 0 1.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.experiencias__img {
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.experiencias__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiencias__data .experiencias__titulo {
+  margin-bottom: var(--mb-1-5);
+}
+
+.experiencias__data .experiencias__subtitulo {
+  font-size: var(--fuente-tamanio-h2);
+  margin-bottom: var(--mb-0-75);
+  text-align: justify;
+}
+
+
+.experiencias__mensaje {
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--color-primario);
+  padding: 10px;
+
+  display:flex;
+  align-content: center;
+  font-size: var(--fuente-tamanio-h1);
+  color: var(--color-container);
+  text-align: justify;
+}
+
+
+/* Contacto */
+.contacto__titulo {
+  font-size: var(--fuente-tamanio-grande);
+}
+
+.contacto__subtitulo {
+  font-size: var(--fuente-tamanio-h1);
+}
+
+.contacto__titulo,
+.contacto__subtitulo {
+  margin-bottom: 2px;
+} 
+
+.contacto__container {
+  grid-template-columns: repeat(3, 1fr);
+}
 
 /* cambiar color */
